@@ -24,7 +24,7 @@
     <![endif]-->
     <header>
       <h1>Universal Images Demo Page</h1>
-      <p>The images on this page have been created  by a web server that
+      <p>The images on this page have been created  by an image server that
         supports the <a href="https://github.com/universalimages/rmd">Universal Images Metadata Standard</a>.
         Apart from the target width no other information has been passed to the server.
       </p>
@@ -55,6 +55,16 @@
       <div>
         <h2>Source Image</h2>
         <p><img src="/images/monks/monks-original.jpg" alt="original" /></p>
+      </div>
+
+      <div>
+        <h2>Production Chain</h2>
+        <p>The XMP metadata has been written to the image using the
+          <a href="https://github.com/sbaechler/ps-rmd-plugin">RMD Adobe Photoshop plugin</a> and the
+        <a href="https://github.com/universalimages/rmd-extension">XMP RMD extension</a> to verify it.</p>
+        <p>The <a href="https://github.com/sbaechler/thumbor-rmd-demo">image server</a> is based on
+          <a href="http://thumbor.org/">Thumbor</a>, using the
+          <a href="https://github.com/sbaechler/thumbor-universalimages">Universal Images Filter</a>.</p>
       </div>
 
     </main>
