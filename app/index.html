@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>rmd demo page</title>
+    <title>Responsive Metadata Demo Page</title>
 
     <!-- Place favicon.ico in the root directory -->
 
@@ -22,16 +22,45 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <header>
+      <h1>Universal Images Demo Page</h1>
+      <p>The images on this page have been created  by a web server that
+        supports the <a href="https://github.com/universalimages/rmd">Universal Images Metadata Standard</a>.
+        Apart from the target width no other information has been passed to the server.
+      </p>
+    </header>
+    <main>
+      <div>
+        <h2>Full Size Image</h2>
+        <p><img src="/images/monks/monks-960.jpg" alt="" /><br/>
+        <small><a href="https://flic.kr/p/bstdiw">Alms Giving Ceremony</a> © Simon Bächler CC BY-NC-SA</small>
+        </p>
+      </div>
+      <div>
+        <h2>Responsive Variants</h2>
+        <h3>100x100 px</h3>
+        <p><img src="/images/monks/monks-100x100.jpg" alt=""></p>
+        <h3>240 px</h3>
+        <p><img src="/images/monks/monks-240.jpg" alt=""></p>
+        <h3>320 px</h3>
+        <p><img src="/images/monks/monks-320.jpg" alt=""></p>
+        <h3>360 px</h3>
+        <p><img src="/images/monks/monks-360.jpg" alt=""></p>
+        <h3>640px</h3>
+        <p><img src="/images/monks/monks-640.jpg" alt=""></p>
+        <h3>640x640px Square Aspect Ratio</h3>
+        <p><img src="/images/monks/monks-640x640.jpg" alt=""></p>
+      </div>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>jQuery</li>
-      </ul>
-    </div>
+      <div>
+        <h2>Source Image</h2>
+        <p><img src="/images/monks/monks-original.jpg" alt="original" /></p>
+      </div>
+
+    </main>
+    <footer>
+      All images on this page are licenced under a Creative Commons License.
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -45,14 +74,14 @@
 
     </script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <!--&lt;!&ndash; build:js scripts/vendor.js &ndash;&gt;-->
+    <!--&lt;!&ndash; bower:js &ndash;&gt;-->
+    <!--<script src="/bower_components/jquery/dist/jquery.js"></script>-->
+    <!--&lt;!&ndash; endbower &ndash;&gt;-->
+    <!--&lt;!&ndash; endbuild &ndash;&gt;-->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+    <!--&lt;!&ndash; build:js scripts/main.js &ndash;&gt;-->
+    <!--<script src="scripts/main.js"></script>-->
+    <!--&lt;!&ndash; endbuild &ndash;&gt;-->
   </body>
 </html>
