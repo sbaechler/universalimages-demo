@@ -26,8 +26,9 @@
       <h1>Universal Images Demo Page</h1>
       <p class="header-text">The images on this page have been created  by an image server that
         supports the <a href="https://github.com/universalimages/rmd">Universal Images Metadata Standard</a>.
-        Apart from the target width no other information has been passed to the server.
+        <strong>Apart from the target width (and height where indicated) no other information has been passed to the server</strong>.
       </p>
+      <p>The pixel units are display independent pixels (CSS pixels).</p>
       <button class="cta" onclick="window.location.href='https://www.w3.org/community/universalimages/';">Join the W3C Community Group</button>
     </header>
     <main>
@@ -41,16 +42,22 @@
         <h2>Responsive Variants</h2>
         <h3>100x100 px</h3>
         <p><img src="./images/monks/monks-100x100.jpg" alt=""></p>
+        <p>The avatar image uses the bleed if available for the square aspect ratio while the safety area is protected.</p>
         <h3>240 px</h3>
         <p><img src="./images/monks/monks-240.jpg" alt=""></p>
+        <p>Crops never cut into the safety area.</p>
         <h3>320 px</h3>
         <p><img src="./images/monks/monks-320.jpg" alt=""></p>
+        <p>This is still the same framing as the smaller images because the crop area has a maximum defined width of 320 px.</p>
         <h3>360 px</h3>
         <p><img src="./images/monks/monks-360.jpg" alt=""></p>
+        <p>This size uses a different crop region.</p>
         <h3>640px</h3>
         <p><img src="./images/monks/monks-640.jpg" alt=""></p>
+        <p>From this size on upwards the full image area is used.</p>
         <h3>640x640px Square Aspect Ratio</h3>
         <p><img src="./images/monks/monks-640x640.jpg" alt=""></p>
+        <p>A special region is defined for square aspect ratio target sizes.</p>
       </div>
 
       <div>
