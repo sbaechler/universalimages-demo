@@ -48,3 +48,35 @@ h2 {
   color: #000;
   padding: 0.2em 0;
 }
+
+.cta {
+  display: none;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  top: 6rem;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  transform: rotate(20deg);
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  box-shadow: #184709 1px 1px 8px 0;
+
+  background: #c2e863; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #c2e863 0%, #c2e863 25%, #77d61d 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #c2e863 0%,#c2e863 25%,#77d61d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #c2e863 0%,#c2e863 25%,#77d61d 100%);
+
+}
+@media screen and (min-width: 800px) {
+  .cta {
+    display: block;
+  }
+  .header-text {
+    padding-right: 11rem;
+  }
+}
