@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -11,7 +12,7 @@
 <h1 class="visible-desktop">Responsive Image Behavior</h1>
 <picture class="picture-element">
   <source srcset="./images/monks/monks-960.jpg" media="(min-width: 641px)">
-  <source srcset="./images/monks/monks-640.jpg" media="(min-width: 400px) and (min-aspect-ratio: 1/1)">
+  <source srcset="./images/monks/monks-640.jpg" media="(min-width: 400px and (max-aspect-ratio: 1/1)">
   <source srcset="./images/monks/monks-640.jpg" media="(min-width: 400px)">
   <source srcset="./images/monks/monks-360.jpg" media="(min-width: 330px)">
   <source srcset="./images/monks/monks-320.jpg" media="(min-width: 241px)">
