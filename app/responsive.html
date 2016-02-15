@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  <title>Responsive Image</title>
+</head>
+<body>
+<h1 class="visible-desktop">Responsive Image Behavior</h1>
+<picture class="picture-element">
+  <source srcset="./images/monks/monks-960.jpg" media="(min-width: 641px)">
+  <source srcset="./images/monks/monks-640.jpg" media="(min-width: 400px) and (min-aspect-ratio: 1/1)">
+  <source srcset="./images/monks/monks-640.jpg" media="(min-width: 400px)">
+  <source srcset="./images/monks/monks-360.jpg" media="(min-width: 330px)">
+  <source srcset="./images/monks/monks-320.jpg" media="(min-width: 241px)">
+  <source srcset="./images/monks/monks-240.jpg" media="(min-width: 161px)">
+  <img src="./images/monks/monks-100x100.jpg" alt="Monks">
+</picture>
+
+<p class="visible-desktop">Resize the browser window. <a href="/">Back</a></p>
+
+</body>
+</html>
